@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { color: #111; }
+a { 
+    
+    text-decoration: none; 
+    color: inherit;
+}
+li { 
+    text-decoration: none;
+    list-style: none; 
+}
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* 프리텐다드체 */
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+header { 
+    
+    height: 100px;
+    width: calc(100% - 10px);
+    background-color: rgba(0, 0, 0, 0.185);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2 {
+    font-family: '국립박물관문화재단클래식B';
+    margin-left: 70px;
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    margin-left: 20px;
+}
+header ul li {
+    font-family: 'Pretendard-Regular';
+    margin-right: 25px;
+    
+}
+
+
+
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 100px);
+    margin: 50px auto;
+}
+
+.the .thediv {
+    width: 33%;
+    border-bottom: 25px solid #666;
+
+    padding: 25px;
+    /* display: flex;  */
+    flex-direction: column; /* 가로->세로 변경 */
+    justify-content: space-between; /* flex-direction 때문에 세로 위아래로 정렬된다 */
+}
+
+.cl .cldiv {
+    width: 33%;
+    border-bottom: 25px solid #666;
+    
+    padding: 25px;
+    /* display: flex;  */
+    flex-direction: column; /* 가로->세로 변경 */
+    justify-content: space-between; /* flex-direction 때문에 세로 위아래로 정렬된다 */
+}
+
+.is .isdiv {
+    width: 33%;
+    border-bottom: 25px solid #666;
+    padding: 25px;
+    
+    flex-direction: column; /* 가로->세로 변경 */
+    justify-content: space-between; /* flex-direction 때문에 세로 위아래로 정렬된다 */
+}
+
+
+section figure {
+    width: 65%;
+    height: 40vw;
+}
+section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* ------- button ------- */
+
+
+.the figure {
+    position: relative;
+}
+.is figure {
+    position: relative;
+}
+.cl figure {
+    position: relative;
+}
+
+
+.the figure .thebtn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffffa9;
+    border: none;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+section .clbtn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffffa9;
+    border: none;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+section .isbtn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffffa9;
+    border: none;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+
+/*  -----------div text ----------- */
+
+section .text {
+    border-top: 1px dashed #666;
+    padding-top: 28px;
+}
+
+section h2 { /* 스튜디오 이름 */
+    font-family: 'OTWelcomeRA';
+    font-size: 30px;
+    
+    margin-bottom: 10px;
+    color: black;
+    
+}
+
+p { /* class명 ad = 주소 */
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+section h5 { /* 소제목 */
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    border-left: 4px solid #444;
+    padding-left: 10px;
+}
+
+section ul li { /* 내용 */
+    font-family: 'Pretendard-Regular';
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    margin: 7px;
+}
+.cldiv .text ul li:nth-child(4) {
+    color: red;
+}
+
+
+

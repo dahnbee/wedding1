@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7번연습</title>
+    <link href="css2/77.css" rel="stylesheet" />
+
+
+    <script>
+        window.onload = function() {
+
+            // 1. 변수명 지정하기 : 사용될 사진마다 변수명 설정
+            let img1 = 'img2/더브라이드(1).jpg'
+            let img2 = 'img2/더브라이드(2).jpg'
+            let img3 = 'img2/더브라이드(3).jpg'
+            let img4 = 'img2/더브라이드(4).jpg'
+            let img5 = 'img2/더브라이드(5).jpg'
+            let img6 = 'img2/더브라이드(6).jpg'
+            let img7 = 'img2/더브라이드(7).jpg'
+            let img8 = 'img2/더브라이드(8).jpg'
+            let img9 = 'img2/더브라이드(9).jpg'
+
+            let imgg1 = 'img2/이즈인스냅 (1).jpg'
+            let imgg2 = 'img2/이즈인스냅 (2).jpg'
+            let imgg3 = 'img2/이즈인스냅 (3).jpg'
+            let imgg4 = 'img2/이즈인스냅 (4).jpg'
+            let imgg5 = 'img2/이즈인스냅 (5).jpg'
+            let imgg6 = 'img2/이즈인스냅 (6).jpg'
+            let imgg7 = 'img2/이즈인스냅 (7).jpg'
+            let imgg8 = 'img2/이즈인스냅 (8).jpg'
+            let imgg9 = 'img2/이즈인스냅 (9).jpg'
+            
+            let imggg1 = 'img2/클레어 (1).jpg'
+            let imggg2 = 'img2/클레어 (2).jpg'
+            let imggg3 = 'img2/클레어 (3).jpg'
+            let imggg4 = 'img2/클레어 (4).jpg'
+            let imggg5 = 'img2/클레어 (5).jpg'
+            let imggg6 = 'img2/클레어 (6).jpg'
+            let imggg7 = 'img2/클레어 (7).jpg'
+            let imggg8 = 'img2/클레어 (8).jpg'
+            let imggg9 = 'img2/클레어 (9).jpg'
+            
+
+            // 1-1. 실제 사용한 img 태그의 변수명 지정
+            let theimg = document.getElementsByClassName('theimg')[0];
+            let thebtn = document.getElementsByClassName('thebtn')[0];
+
+            let isimg = document.getElementsByClassName('isimg')[0];
+            let isbtn = document.getElementsByClassName('isbtn')[0];
+
+            let climg = document.getElementsByClassName('climg')[0];
+            let clbtn = document.getElementsByClassName('clbtn')[0];
+
+
+
+            let imgList = [img1, img2, img3, img4, img5, img6, img7, img8, img9 ]
+            let imggList = [imgg1, imgg2, imgg3, imgg4, imgg5, imgg6, imgg7, imgg8, imgg9]
+            let imgggList =[imggg1, imggg2, imggg3, imggg4, imggg5, imggg6, imggg7, imggg8, imggg9 ]
+
+           
+            let index = 0;
+
+
+            /* 더브라이드 */
+            thebtn.onclick = function() {
+                index++;
+                console.log(index)
+
+                if(index == 9) {
+                    index = 0;
+                }
+                
+                theimg.src = imgList[index];
+            }
+
+            /* 이즈인 */
+            isbtn.onclick = function() {
+                index++;
+                console.log(index)
+
+                if(index == 9) {
+                    index = 0;
+                }
+                
+                isimg.src = imggList[index];
+            }
+
+            /* 클레어 */
+            clbtn.onclick = function() {
+                index++;
+                console.log(index)
+
+                if(index == 9) {
+                    index = 0;
+                }
+                
+                climg.src = imgggList[index];
+            }
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    
+    <header>
+            <h2> Let's get married together </h2>
+
+            <ul>
+                <li><a href=""> 웨딩홀/베뉴 </a></li> 
+                <li><a href=""> 스튜디오 </a></li> 
+                <li><a href=""> 드레스&메이크업 </a></li> 
+                <li><a href=""> 본식 스냅 </a></li> 
+            </ul>
+    </header>
+    
+
+    <section class="the">
+        <div class="thediv">
+
+            <h2> 더브라이드 스튜디오 </h2>
+            <p class="ad"> 서울특별시 송파구 오금로 152 송파연세빌딩 6층 </p>
+            
+            <div class="text">
+
+                <h5> 셀렉 포인트 </h5>
+                <ul>   
+                    <li> #우아함 #웅장함 #유니크함 #요즘 인기 있는 스튜디오 </li>
+                    <li> - 배경 맛집 : 유럽, 중세풍, 시그니처 드레스 </li>
+                    <li> - 토탈 스튜디오 : 드레스와 메이크업을 한 번에 해결 </li>
+                </ul>
+                <br>
+                <h5> 예상 비용(블로그 후기 기준) </h5>
+                <ul>    
+                    <li> - 드레스 + 메이크업 + 촬영 모두 포함 </li>
+                    <li> - 스튜디오 촬영 + 촬영 당일 추가 비용(헬퍼) + 셀렉 추가 </li>
+                    <li>  ㄴ 3,000,000 ~ 3,500,000 </li>
+                </ul> 
+
+            </div> <!--  text div end -->
+        </div>
+
+        <figure>
+            <img class="theimg" src="img2/더브라이드(1).jpg" alt=""/>
+            <button class="thebtn"> >  </button>
+        </figure>
+    </section> <!--the section end -->
+
+    <section class="cl">
+
+        <div class="cldiv">
+            <h2> 클레이앤클래어 </h2>
+            <p class="ad"> 서울특별시 강남구 학동로3길 30 </p>
+
+            <div class="text">
+
+                <h5> 셀렉 포인트 </h5>
+            <ul>    
+                <li> #세련미 #깔끔함 #정원컨셉 </li>
+                <li> - 인물 중심의 깔끔한 스튜디오 </li>
+                <li> - 스튜디오+촬영만 제공  </li>
+                <li> - 드레스&메이크업샵을 별도로 예약해야 함 </li>
+            </ul>
+            <br>
+
+                <h5> 예상 비용 (블로그 후기 기준) </h5>
+                <ul>    
+                    <li> 970,000 ~ 1,500,000 </li>
+                    <li> ㄴ 아이웨딩 가입 시 할인 받은 기준 </li>
+                    <li> ㄴ 패키지 및 플래너와 상담 후 결정 </li>
+                    
+                </ul> 
+
+            </div> <!--  text div end -->
+
+        </div>
+
+        <figure>
+            <img class="climg" src="img2/클레어 (1).JPG" alt=""/>
+            <button class="clbtn"> >  </button>
+        </figure>
+
+        
+
+    </section> <!-- cl section end -->
+
+    <section class="is">
+
+        <div class="isdiv">
+
+            <h2> 이즈인스냅 </h2>
+            <p class="ad"> 부산광역시 금정구 금샘로 331 </p>
+            
+            <div class="text">
+
+                <h5> 셀렉 포인트 </h5>
+                <ul>    
+                    <li> #생기발랄 #자연스러움 #싱그러움 </li>
+                    <li> - 부산에서 가능한 야외스냅 (원하는 색감 보정) </li>
+                    <li> - 토탈 스튜디오 : 드레스와 메이크업을 한 번에 해결 </li>
+                </ul>
+                <br>
+
+                <h5> 확정 비용 </h5>
+                <ul>   
+                    <li> [ HALF DAY - 1,900,000원 ] </li>
+                    <li> - 5시간 소요 / 세부 보정본 35장, 앨범 16p </li>
+                    <li> [ ONE DAY - 2,300,000원 ] </li>    
+                    <li> - 7시간 소요 / 세부 보정본 50장, 앨범 24p </li>
+                </ul> 
+
+            </div> <!--  text div end -->
+
+
+        </div>
+
+        <figure>
+            <img class="isimg" src="img2/이즈인스냅 (1).JPG" alt=""/>
+            <button class="isbtn"> > </button>
+        </figure>
+
+    </section> <!-- is section end -->
+
+
+
+</body>
+</html>
